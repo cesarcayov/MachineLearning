@@ -1,0 +1,22 @@
+\begin{table}
+\caption{Baseline vs. tuned best per (dataset, model). Deltas are tuned minus baseline.}
+\label{tab:tuned_vs_baseline}
+\begin{tabular}{llrrrrrrl}
+\toprule
+Dataset & Model & Base_CV_Accuracy_mean & CV_Accuracy_mean & Delta_CV_Accuracy_mean & Base_CV_F1_mean & CV_F1_mean & Delta_CV_F1_mean & Best_Params \\
+\midrule
+dataset1 & NeuralNet & 0.7318 & 0.7189 & -0.0129 & 0.7280 & 0.7138 & -0.0142 & {"mlpclassifier__alpha": 0.001, "mlpclassifier__early_stopping": true, "mlpclassifier__hidden_layer_sizes": [100, 100], "mlpclassifier__learning_rate_init": 0.01, "mlpclassifier__max_iter": 300} \\
+dataset1 & RandomForest & 0.8894 & 0.9024 & 0.0130 & 0.8896 & 0.9024 & 0.0127 & {"randomforestclassifier__class_weight": "balanced", "randomforestclassifier__max_depth": 20, "randomforestclassifier__max_features": "log2", "randomforestclassifier__min_samples_split": 5, "randomforestclassifier__n_estimators": 300} \\
+dataset1 & SVM\_rbf & 0.6862 & 0.7487 & 0.0625 & 0.6710 & 0.7483 & 0.0774 & {"svc__C": 100, "svc__class_weight": null, "svc__gamma": "auto"} \\
+dataset2 & NeuralNet & 0.9999 & 0.9999 & -0.0000 & 0.9999 & 0.9999 & -0.0000 & {"mlpclassifier__alpha": 0.0001, "mlpclassifier__early_stopping": true, "mlpclassifier__hidden_layer_sizes": [200], "mlpclassifier__learning_rate_init": 0.001, "mlpclassifier__max_iter": 300} \\
+dataset2 & RandomForest & 1.0000 & 1.0000 & 0.0000 & 1.0000 & 1.0000 & 0.0000 & {"randomforestclassifier__class_weight": null, "randomforestclassifier__max_depth": null, "randomforestclassifier__max_features": null, "randomforestclassifier__min_samples_split": 5, "randomforestclassifier__n_estimators": 100} \\
+dataset2 & SVM\_rbf & 0.9998 & 0.9999 & 0.0001 & 0.9998 & 0.9999 & 0.0001 & {"svc__C": 100, "svc__class_weight": null, "svc__gamma": 0.001} \\
+dataset3 & NeuralNet & 1.0000 & 0.9884 & -0.0116 & 1.0000 & 0.9884 & -0.0116 & {"mlpclassifier__alpha": 0.01, "mlpclassifier__early_stopping": true, "mlpclassifier__hidden_layer_sizes": [100, 100], "mlpclassifier__learning_rate_init": 0.01, "mlpclassifier__max_iter": 300} \\
+dataset3 & RandomForest & 0.9931 & 1.0000 & 0.0069 & 0.9931 & 1.0000 & 0.0069 & {"randomforestclassifier__class_weight": "balanced", "randomforestclassifier__max_depth": null, "randomforestclassifier__max_features": null, "randomforestclassifier__min_samples_split": 2, "randomforestclassifier__n_estimators": 100} \\
+dataset3 & SVM\_rbf & 0.9143 & 0.9885 & 0.0742 & 0.9137 & 0.9885 & 0.0748 & {"svc__C": 100, "svc__class_weight": null, "svc__gamma": "auto"} \\
+dataset4 & NeuralNet & 0.8138 & 0.8191 & 0.0053 & 0.6762 & 0.6852 & 0.0091 & {"mlpclassifier__alpha": 0.01, "mlpclassifier__early_stopping": true, "mlpclassifier__hidden_layer_sizes": [200], "mlpclassifier__learning_rate_init": 0.01, "mlpclassifier__max_iter": 300} \\
+dataset4 & RandomForest & 0.8162 & 0.7890 & -0.0272 & 0.6804 & 0.7033 & 0.0229 & {"randomforestclassifier__class_weight": "balanced", "randomforestclassifier__max_depth": 10, "randomforestclassifier__max_features": "log2", "randomforestclassifier__min_samples_split": 2, "randomforestclassifier__n_estimators": 300} \\
+dataset4 & SVM\_rbf & 0.8189 & 0.7767 & -0.0422 & 0.6699 & 0.6936 & 0.0236 & {"svc__C": 1, "svc__class_weight": "balanced", "svc__gamma": "auto"} \\
+\bottomrule
+\end{tabular}
+\end{table}

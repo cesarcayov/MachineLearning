@@ -1,0 +1,5 @@
+Dataset,NeuralNet,RandomForest,SVM_rbf
+dataset1,0.719,0.902,0.749
+dataset2,1.0,1.0,1.0
+dataset3,0.988,1.0,0.989
+dataset4,0.819,0.789,0.777

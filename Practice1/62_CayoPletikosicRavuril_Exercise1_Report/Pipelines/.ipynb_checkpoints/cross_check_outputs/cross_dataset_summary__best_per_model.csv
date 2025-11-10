@@ -1,0 +1,4 @@
+Model,Accuracy,F1_macro,Train_time_s,Infer_time_s,CV_Accuracy_mean,CV_Accuracy_std,CV_F1_mean,CV_F1_std,Holdout_Accuracy,Holdout_F1_macro,Holdout_Train_time_s,Holdout_Infer_time_s,Wins_CV_F1_mean_x,Wins_CV_F1_mean_y,Wins_CV_Accuracy_mean
+RandomForest,0.0,0.0,0.0,0.0,0.923,0.006,0.901,0.007,0.921,0.899,7.894,0.041,4.0,4.0,3.0
+SVM_rbf,0.0,0.0,0.0,0.0,0.878,0.014,0.858,0.014,0.873,0.851,4.288,1.055,0.0,0.0,0.0
+NeuralNet,0.0,0.0,0.0,0.0,0.882,0.02,0.847,0.022,0.866,0.827,1.577,0.008,0.0,0.0,1.0

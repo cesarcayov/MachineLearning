@@ -1,0 +1,104 @@
+% Best-per-model-per-dataset summary
+\begin{table}
+\caption{Average performance across datasets using the best hyperparameters per model per dataset (primary metric: CV_F1_mean).}
+\label{tab:cross_dataset_summary_best}
+\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+ & Accuracy & F1\_macro & Train\_time\_s & Infer\_time\_s & CV\_Accuracy\_mean & CV\_Accuracy\_std & CV\_F1\_mean & CV\_F1\_std & Holdout\_Accuracy & Holdout\_F1\_macro & Holdout\_Train\_time\_s & Holdout\_Infer\_time\_s & Wins\_CV\_F1\_mean\_x & Wins\_CV\_F1\_mean\_y & Wins\_CV\_Accuracy\_mean \\
+Model &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+RandomForest & 0.000 & 0.000 & 0.000 & 0.000 & 0.923 & 0.006 & 0.901 & 0.007 & 0.921 & 0.899 & 7.894 & 0.041 & 4.000 & 4.000 & 3.000 \\
+SVM\_rbf & 0.000 & 0.000 & 0.000 & 0.000 & 0.878 & 0.014 & 0.858 & 0.014 & 0.873 & 0.851 & 4.288 & 1.055 & 0.000 & 0.000 & 0.000 \\
+NeuralNet & 0.000 & 0.000 & 0.000 & 0.000 & 0.882 & 0.020 & 0.847 & 0.022 & 0.866 & 0.827 & 1.577 & 0.008 & 0.000 & 0.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% Best hyperparameters pivots
+\begin{table}
+\caption{Per-dataset Accuracy by model (best hyperparameters).}
+\label{tab:per_dataset_accuracy_best}
+\begin{tabular}{lrrr}
+\toprule
+Model & NeuralNet & RandomForest & SVM\_rbf \\
+Dataset &  &  &  \\
+\midrule
+dataset1 & NaN & NaN & NaN \\
+dataset2 & NaN & NaN & NaN \\
+dataset3 & NaN & NaN & NaN \\
+dataset4 & NaN & NaN & NaN \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption{Per-dataset F1-macro by model (best hyperparameters).}
+\label{tab:per_dataset_f1_best}
+\begin{tabular}{lrrr}
+\toprule
+Model & NeuralNet & RandomForest & SVM\_rbf \\
+Dataset &  &  &  \\
+\midrule
+dataset1 & NaN & NaN & NaN \\
+dataset2 & NaN & NaN & NaN \\
+dataset3 & NaN & NaN & NaN \\
+dataset4 & NaN & NaN & NaN \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption{Per-dataset CV Accuracy mean by model (best hyperparameters).}
+\label{tab:per_dataset_cv_accuracy_best}
+\begin{tabular}{lrrr}
+\toprule
+Model & NeuralNet & RandomForest & SVM\_rbf \\
+Dataset &  &  &  \\
+\midrule
+dataset1 & 0.719 & 0.902 & 0.749 \\
+dataset2 & 1.000 & 1.000 & 1.000 \\
+dataset3 & 0.988 & 1.000 & 0.989 \\
+dataset4 & 0.819 & 0.789 & 0.777 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption{Per-dataset CV F1 mean by model (best hyperparameters).}
+\label{tab:per_dataset_cv_f1_best}
+\begin{tabular}{lrrr}
+\toprule
+Model & NeuralNet & RandomForest & SVM\_rbf \\
+Dataset &  &  &  \\
+\midrule
+dataset1 & 0.714 & 0.902 & 0.748 \\
+dataset2 & 1.000 & 1.000 & 1.000 \\
+dataset3 & 0.988 & 1.000 & 0.988 \\
+dataset4 & 0.685 & 0.703 & 0.694 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% Average-over-all-params CV F1 (stability view)
+\begin{table}
+\caption{Per-dataset CV F1 mean by model (average over all hyperparameter settings).}
+\label{tab:per_dataset_cv_f1_avg}
+\begin{tabular}{lrrr}
+\toprule
+Model & NeuralNet & RandomForest & SVM\_rbf \\
+Dataset &  &  &  \\
+\midrule
+dataset1 & 0.658 & 0.893 & 0.612 \\
+dataset2 & 1.000 & 1.000 & 1.000 \\
+dataset3 & 0.829 & 0.993 & 0.778 \\
+dataset4 & 0.677 & 0.685 & 0.664 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
